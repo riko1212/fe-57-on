@@ -4,48 +4,74 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Barbershop</title>
+    <style></style>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="">
+    <header class="header">
+      <nav class="header-nav">
+        <a href="" class="header-logo">
           <img src="./img/logo.svg" alt="лого сайта" />
         </a>
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Услуги и цены</a></li>
-          <li><a href="#masters">Мастера</a></li>
-          <li><a href="">Контакты</a></li>
+        <ul class="header-list list">
+          <li class="header-item">
+            <a href="./portfolio.html" class="header-link">О нас</a>
+          </li>
+          <li class="header-item">
+            <a href="https://www.google.com/" class="header-link"
+              >Услуги и цены</a
+            >
+          </li>
+          <li class="header-item">
+            <a href="#masters" class="header-link">Мастера</a>
+          </li>
+          <li class="header-item">
+            <a href="https://www.google.com/" class="header-link">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запись</button>
+      <a href="tel:+380441111111" class="header-tel">+38 044 111 11 11</a>
+      <button type="button" class="header-btn">онлайн-запись</button>
     </header>
     <main>
-      <section>
-        <ul>
-          <li>
-            <a href="" target="_blank" rel="noopener noreferrer nofollow"
+      <section class="hero">
+        <ul class="hero-list list">
+          <li class="hero-item">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="hero-link"
               >Instagram</a
             >
           </li>
-          <li>
-            <a href="" target="_blank" rel="noopener noreferrer nofollow"
+          <li class="hero-item">
+            <a
+              href=""
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              class="hero-link"
               >Youtube</a
             >
           </li>
         </ul>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1 lang="en">BarberShop</h1>
-        <p>
+        <p lang="en" class="hero-pre-title">A hair salon for men in Kyiv</p>
+        <h1 lang="en" class="hero-title">BarberShop</h1>
+        <p class="hero-after-title">
           Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
           вкусом.
         </p>
       </section>
-      <section>
-        <ul>
-          <li>
+      <section class="about">
+        <ul class="about-list list">
+          <li class="about-item">
             <img
               src="./img/about-img-1.jpeg"
               alt="барбер бреет шею"
@@ -53,7 +79,7 @@
               height="445"
             />
           </li>
-          <li>
+          <li class="about-item">
             <img
               src="./img/about-img-2.jpeg"
               alt="барбер стрежет кантик"
@@ -62,22 +88,22 @@
             />
           </li>
         </ul>
-        <p>О нас</p>
-        <h2>Лучший Барбершоп твоего города</h2>
-        <p>
+        <p class="about-pre-title">О нас</p>
+        <h2 class="about-title">Лучший Барбершоп твоего города</h2>
+        <p class="about-after-title">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
           нам.
         </p>
-        <p>
+        <p class="about-text">
           Мы команда, которая никогда не останавливается на достигнутом и жаждет
           перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
           сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
           волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам
           приходит!
         </p>
-        <button type="button">онлайн-запись</button>
+        <button type="button" class="about-btn">онлайн-запись</button>
       </section>
-      <section>
+      <section class="prices">
         <p>Проведи время в компании лучших мастеров</p>
         <h2>Услуги и цены</h2>
         <ul>
@@ -118,23 +144,23 @@
         </ul>
         <button type="button">онлайн-запись</button>
       </section>
-      <section>
+      <section class="benefits">
         <ul>
           <li>
             <span>600</span>
-            <p>Довольных клиентов в день</p>
+            <p class="text">Довольных клиентов в день</p>
           </li>
           <li>
             <span>50</span>
-            <p>Наград за отличный сервис</p>
+            <p class="text">Наград за отличный сервис</p>
           </li>
           <li>
             <span>20</span>
-            <p>Лучших мастеров Киева</p>
+            <p class="text">Лучших мастеров Киева</p>
           </li>
           <li>
             <span>100</span>
-            <p>Подарков постоянным клиентам</p>
+            <p class="text">Подарков постоянным клиентам</p>
           </li>
         </ul>
         <p>старая традиционная школа</p>
@@ -225,7 +251,11 @@
         <h2>Контакты</h2>
         <address>
           <ul>
-            <li><a href="">ул. Васильковая, 7А Киев, 08132</a></li>
+            <li>
+              <a href="https://www.google.com/"
+                >ул. Васильковая, 7А Киев, 08132</a
+              >
+            </li>
             <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
             <li>
               <a href="mailto:barbershop@email.com">barbershop@email.com</a>
