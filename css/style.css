@@ -1,45 +1,292 @@
-.text {
-  color: purple;
+:root {
+  --header-color: #ffffff;
+  --main-btn-color: #ffffff;
+  --second-btn-color: #303030;
+  --main-title-color: #ffffff;
+  --second-title-color: #303030;
+  --main-font: "open sans", sans-serif;
+  --accent-color: #ff6c00;
+}
+
+body {
+  font-family: var(--main-font);
 }
 
 .list {
   list-style: none;
 }
 
-body {
-  font-family: "open sans", sans-serif;
+.link {
+  text-decoration: none;
 }
 
-* {
-  color: brown;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* -------------------HEADER--------------- */
+
+.header {
+  background-color: gray;
+}
+
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-btn {
+  color: var(--main-btn-color);
+}
+
+/* -------------------HERO--------------- */
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--main-title-color);
+  background-color: #303030;
+}
+
+.hero-after-title {
+  color: #9da4bd;
+}
+
+/* -------------------ABOUT--------------- */
+
+.about-pre-title {
+  color: #303030;
+}
+
+.about-title {
+  color: var(--second-title-color);
+}
+
+.about-after-title {
+  color: #555555;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about-btn {
+  color: #303030;
+}
+
+/* -------------------PRICES--------------- */
+
+.prices {
+  background-color: #303030;
+}
+
+.prices-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--main-title-color);
+}
+
+.prices-item-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.prices-btn {
+  color: var(--main-btn-color);
+}
+
+/* -------------------BENEFITS--------------- */
+
+.benefits-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+
+.benefits-pre-title {
+  color: #303030;
+}
+
+.benefits-title {
+  color: var(--second-title-color);
+}
+
+.benefits-after-title {
+  color: #555555;
+}
+
+/* -------------------MASTERS--------------- */
+
+.masters-pre-title {
+  color: #303030;
+}
+
+.masters-title {
+  color: var(--second-title-color);
+}
+
+.masters-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters-item-text {
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* -------------------GALLERY--------------- */
+
+.gallery-pre-title {
+  color: #303030;
+}
+
+/* -------------------ONLINE--------------- */
+
+.online-title {
+  color: var(--main-title-color);
+}
+
+/* -------------------CONTACTS--------------- */
+
+.contacts {
+  background-color: #303030;
+}
+
+.contacts-title {
+  color: var(--main-title-color);
+}
+
+.contacts-address {
+  font-style: normal;
+}
+
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-pre-title {
   color: #ffffff;
 }
 
-p {
-  color: green;
+.contacts-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 
-/* Селектори
-Універсальний
-Тег
-ID
-Клас
-Атрибут
-Нашадка
-Дочірній
-*/
+/* -------------------FOOTER--------------- */
 
-.header-list.list {
-  background-color: tomato;
+.footer-copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
 }
 
-/* .header a {
-  color: blue;
-} */
-
-.header > a {
-  color: blue;
-}
-
-button[type="reset"] {
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
 }
