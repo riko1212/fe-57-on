@@ -74,6 +74,11 @@ img {
 }
 
 .btn {
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -112,6 +117,32 @@ img {
   padding-bottom: 32px;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
 .header-link,
 .header-tel {
   font-weight: 600;
@@ -128,13 +159,22 @@ img {
 
 .header-btn {
   color: var(--main-btn-color);
+  margin-left: 40px;
 }
 
 /* -------------------HERO--------------- */
 
+.hero .container {
+  display: flex;
+}
+.hero-list {
+  width: 90px;
+}
+
 .hero-content {
   background-color: #303030;
   padding: 270px 100px 200px 100px;
+  flex-grow: 1;
 }
 
 .hero-link {
@@ -176,6 +216,19 @@ img {
 .about {
   padding-top: 163px;
   padding-bottom: 89px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+  margin-right: 64px;
+}
+
+.about-item + .about-item {
+  margin-left: 30px;
 }
 
 .about-pre-title {
@@ -223,13 +276,24 @@ img {
   margin-bottom: 44px;
 }
 
+.prices-wrap {
+  display: flex;
+}
+
 .prices-list {
   border: 1px solid #ffffff;
   padding: 30px 40px;
+  flex-grow: 1;
 }
 
 .prices-item {
   margin-bottom: var(--typical-margin);
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-item-text {
@@ -326,6 +390,25 @@ img {
   color: var(--accent-color);
 }
 
+.masters-list {
+  display: flex;
+  margin: -15px;
+}
+
+.masters-item {
+  /* flex-basis: calc((100% - 90px) / 3); */
+  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
+}
+
+/* .masters-item {
+  width: 370px;
+}
+
+.masters-item:not(:last-child) {
+  margin-right: 30px;
+} */
+
 /* -------------------GALLERY--------------- */
 
 .gallery {
@@ -337,6 +420,27 @@ img {
   color: #303030;
   margin-bottom: 44px;
 }
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
+}
+
+/* .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.gallery-item {
+  width: calc(100% / 4 - 30px);
+  margin: 15px;
+} */
 
 /* -------------------ONLINE--------------- */
 .online {
