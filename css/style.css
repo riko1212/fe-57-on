@@ -751,11 +751,12 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
-  width: 500px;
+  width: 544px;
   min-height: 600px;
   background-color: #ffffff;
   border-radius: 5px;
   transition: transform 300ms linear;
+  padding: 80px;
 }
 
 .modal-close-btn {
@@ -780,4 +781,72 @@ img {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: calc(26 / 22);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal-text {
+  font-size: 15px;
+  line-height: 1.47;
+
+  text-align: center;
+
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  background-color: transparent;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  color: purple;
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):valid {
+  background-color: rgba(0, 128, 0, 0.35);
+}
+
+.modal-input:not(:placeholder-shown):not(:focus):invalid {
+  background-color: rgba(128, 34, 0, 0.35);
+}
+
+.modal-input:placeholder-shown {
+  background-color: transparent;
+}
+
+.modal-input::placeholder {
+  font-size: 15px;
+  line-height: calc(18 / 15);
+  color: rgba(34, 34, 34, 0.603);
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: calc(18 / 15);
+  color: rgba(34, 34, 34, 0.603);
+}
+
+.modal-text-area {
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  resize: none;
+  padding: 10px;
 }

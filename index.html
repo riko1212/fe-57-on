@@ -429,13 +429,88 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="masters-soc-icon" width="20" height="20">
             <use href="./img/icons.svg#icon-instagram"></use>
           </svg>
         </button>
+        <p class="modal-title">Записаться к мастеру</p>
+        <p class="modal-text">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium
+        </p>
+        <form class="modal-form">
+          <label class="modal-label"
+            >Имя
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              placeholder="Джон"
+              required
+            />
+          </label>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <input
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+              placeholder="+380 (96) 111-11-11"
+              required
+              minlength="10"
+              title="+380 (96) 111-11-11"
+              id="user-tel"
+              value="+380"
+            />
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="modal-text">Комментарий</label>
+            <textarea
+              name="modal-text"
+              id="modal-text"
+              class="modal-text-area"
+              placeholder="Комент"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="service">Послуга</label>
+            <select name="service" class="modal-input" p id="service" multiple>
+              <option value="hairrcut">Стрижка</option>
+              <option value="beardcut">Стрижка бороди</option>
+              <option value="hairrcut">Стрижка</option>
+              <option value="beardcut">Стрижка бороди</option>
+            </select>
+          </div>
+          <fieldset>
+            <legend>Size</legend>
+            <label for="big">big</label>
+            <input type="radio" id="big" name="size" value="big" />
+            <label for="small">small</label>
+            <input type="radio" id="small" name="size" value="small" />
+          </fieldset>
+          <fieldset>
+            <legend>add</legend>
+            <label for="cheese">cheese</label>
+            <input type="checkbox" id="cheese" name="add" value="cheese" />
+            <label for="tomato">tomato</label>
+            <input
+              type="checkbox"
+              id="tomato"
+              name="add"
+              value="tomato"
+              checked
+            />
+          </fieldset>
+          <button type="submit" class="btn modal-btn">
+            отправить
+            <svg class="masters-soc-icon" width="20" height="20">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
