@@ -388,6 +388,36 @@
         <div class="container">
           <section class="online">
             <h2 class="online-title title">Онлайн-запись</h2>
+            <form class="online-form">
+              <div class="online-wrap">
+                <input
+                  type="text"
+                  placeholder=" "
+                  name="online-name"
+                  class="online-input"
+                  id="online-name"
+                />
+                <label for="online-name" class="online-label">Имя*</label>
+              </div>
+              <div class="online-wrap">
+                <input
+                  type="text"
+                  placeholder=" "
+                  name="online-name"
+                  class="online-input"
+                />
+                <label for="online-name" class="online-label">Телефон*</label>
+              </div>
+              <div class="online-wrap text-wrap">
+                <textarea
+                  name="online-text"
+                  placeholder=" "
+                  class="online-textarea"
+                ></textarea>
+                <label for="online-name" class="online-label">сообщение</label>
+              </div>
+              <button type="submit" class="btn online-btn">отправить</button>
+            </form>
           </section>
           <section class="contacts">
             <h2 class="contacts-title title">Контакты</h2>
@@ -429,7 +459,7 @@
         </ul>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="masters-soc-icon" width="20" height="20">
@@ -441,7 +471,7 @@
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium
         </p>
-        <form class="modal-form">
+        <form class="modal-form" autocomplete="off">
           <label class="modal-label"
             >Имя
             <input
@@ -454,17 +484,21 @@
           </label>
           <div class="modal-field">
             <label class="modal-label" for="user-tel">Телефон</label>
-            <input
-              type="tel"
-              name="user-tel"
-              class="modal-input"
-              placeholder="+380 (96) 111-11-11"
-              required
-              minlength="10"
-              title="+380 (96) 111-11-11"
-              id="user-tel"
-              value="+380"
-            />
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder="+380 (96) 111-11-11"
+                required
+                minlength="10"
+                title="+380 (96) 111-11-11"
+                id="user-tel"
+              />
+              <svg class="input-icon" width="18" height="18">
+                <use href="./img/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label class="modal-label" for="modal-text">Комментарий</label>
@@ -476,6 +510,22 @@
             ></textarea>
           </div>
           <div class="modal-field">
+            <input
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              class="input-check visually-hidden"
+            />
+            <label for="privacy" class="check-text">
+              <span>
+                <svg class="check-icon" width="11" height="8">
+                  <use href="./img/icons.svg#icon-che"></use>
+                </svg>
+              </span>
+              Даю согласие на&nbsp; <a href="">обработку личных данных</a>
+            </label>
+          </div>
+          <!-- <div class="modal-field">
             <label class="modal-label" for="service">Послуга</label>
             <select name="service" class="modal-input" p id="service" multiple>
               <option value="hairrcut">Стрижка</option>
@@ -483,8 +533,8 @@
               <option value="hairrcut">Стрижка</option>
               <option value="beardcut">Стрижка бороди</option>
             </select>
-          </div>
-          <fieldset>
+          </div> -->
+          <!-- <fieldset>
             <legend>Size</legend>
             <label for="big">big</label>
             <input type="radio" id="big" name="size" value="big" />
@@ -503,7 +553,7 @@
               value="tomato"
               checked
             />
-          </fieldset>
+          </fieldset> -->
           <button type="submit" class="btn modal-btn">
             отправить
             <svg class="masters-soc-icon" width="20" height="20">
