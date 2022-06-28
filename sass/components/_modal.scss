@@ -1,0 +1,222 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 28, 38, 0.252);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  width: 544px;
+  min-height: 600px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  transition: transform 300ms linear;
+  padding: 80px;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0) rotate(-360deg);
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999999;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: calc(26 / 22);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.modal-text {
+  font-size: 15px;
+  line-height: 1.47;
+
+  text-align: center;
+
+  color: #222222;
+  margin-bottom: 16px;
+}
+
+.modal-field {
+  margin-bottom: 16px;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  background-color: transparent;
+  padding-left: 30px;
+  color: purple;
+  outline: transparent;
+  &:focus {
+    outline: 1px solid var(--accent-color);
+    border-color: var(--accent-color);
+  }
+  &:not(:placeholder-shown):not(:focus):valid {
+    background-color: rgba(0, 128, 0, 0.35);
+  }
+
+  &:not(:placeholder-shown):not(:focus):invalid {
+    background-color: rgba(128, 34, 0, 0.35);
+  }
+
+  &:placeholder-shown {
+    background-color: transparent;
+  }
+  &::placeholder {
+    font-size: 15px;
+    line-height: calc(18 / 15);
+    color: rgba(34, 34, 34, 0.603);
+  }
+}
+
+.input-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  .modal-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 15px;
+  line-height: calc(18 / 15);
+  color: rgba(34, 34, 34, 0.603);
+}
+
+.modal-text-area {
+  width: 100%;
+  height: 100px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  resize: none;
+  padding: 10px;
+}
+
+.check-text {
+  font-size: 15px;
+  line-height: 18px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.check-text a {
+  color: var(--accent-color);
+}
+
+/* .check-text::before {
+  content: '';
+  width: 40px;
+  height: 22px;
+  border-radius: 50px;
+  border: 1px solid #9da4bd;
+  margin-right: 10px;
+  transition: background-color 250ms;
+}
+
+.check-text::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgba(157, 164, 189, 0.512);
+  transition: transform 250ms, background-color 250ms;
+}
+
+.input-check:checked + .check-text::after {
+  transform: translate(18px);
+  background-color: #ffffff;
+}
+
+.input-check:checked + .check-text::before {
+  background-color: #9ce096;
+} */
+
+/* //////////////////////sprite/////////////////////////// */
+
+.check-text span {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .input-check:checked + & {
+    background-color: var(--accent-color);
+    border: none;
+  }
+}
+
+.check-icon {
+  fill: transparent;
+  .input-check:checked + .check-text & {
+    fill: #ffffff;
+  }
+}
+
+/* //////////////////////before/////////////////////////// */
+
+/* .check-text::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(34, 34, 34, 0.2);
+  margin-right: 5px;
+}
+
+.input-check:checked + .check-text::before {
+  background-color: var(--accent-color);
+  background-image: url(../img/che.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+} */

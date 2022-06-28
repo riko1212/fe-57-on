@@ -1,0 +1,50 @@
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-connect {
+  margin-left: auto;
+}
+
+.header-link,
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--header-color);
+  transition: color 300ms linear;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.header-btn {
+  color: var(--main-btn-color);
+  margin-left: 40px;
+}
