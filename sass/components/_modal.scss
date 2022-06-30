@@ -33,8 +33,7 @@
   border: 1px solid #999999;
   border-radius: 50%;
   background-color: transparent;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
 }
 
@@ -140,8 +139,7 @@
   font-size: 15px;
   line-height: 18px;
   color: #222222;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   position: relative;
 }
 
@@ -187,8 +185,7 @@
   height: 20px;
   border: 1px solid rgba(34, 34, 34, 0.2);
   margin-right: 5px;
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   .input-check:checked + & {
     background-color: var(--accent-color);
