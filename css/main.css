@@ -65,7 +65,7 @@ body {
   margin: -1px;
 }
 
-.masters-soc-link, .hero-list, .header-nav, .header .container, .check-text span, .check-text, .modal-close-btn, .pre-title {
+.socials__link, .soc-list, .nav, .header .container, .check-text span, .check-text, .modal-close-btn, .pre-title {
   display: flex;
   align-items: center;
 }
@@ -109,6 +109,14 @@ body {
   width: 63px;
   background-color: currentColor;
   margin-right: 21px;
+}
+
+.pre-title--color-light {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.pre-title--color-dark {
+  color: #303030;
 }
 
 .title {
@@ -340,24 +348,24 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.header-list {
+.menu {
   display: flex;
 }
 
-.header-logo {
+.nav__logo {
   margin-right: 70px;
 }
 
-.header-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.header-connect {
+.header__connect {
   margin-left: auto;
 }
 
-.header-link,
-.header-tel {
+.menu__link,
+.connect__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -365,13 +373,13 @@ body {
   color: var(--header-color);
   transition: color 300ms linear;
 }
-.header-link:hover, .header-link:focus,
-.header-tel:hover,
-.header-tel:focus {
+.menu__link:hover, .menu__link:focus,
+.connect__tel:hover,
+.connect__tel:focus {
   color: var(--accent-color);
 }
 
-.header-btn {
+.connect__btn {
   color: var(--main-btn-color);
   margin-left: 40px;
 }
@@ -380,7 +388,7 @@ body {
   display: flex;
 }
 
-.hero-soc {
+.soc {
   width: 90px;
   display: flex;
   align-items: flex-end;
@@ -388,11 +396,11 @@ body {
   padding-left: 22px;
 }
 
-.hero-list {
+.soc-list {
   transform: rotate(-90deg) translateY(100%);
   transform-origin: bottom left;
 }
-.hero-list::before {
+.soc-list::before {
   content: "";
   width: 60px;
   height: 1px;
@@ -400,7 +408,7 @@ body {
   margin-right: 40px;
 }
 
-.hero-item + .hero-item {
+.soc-list__item + .soc-list__item {
   margin-left: 40px;
 }
 
@@ -414,7 +422,7 @@ body {
   flex-grow: 1;
 }
 
-.hero-link {
+.soc-list__link {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -422,17 +430,16 @@ body {
   color: #303030;
 }
 
-.hero-link:hover,
-.hero-link:focus {
+.soc-list__link:hover,
+.soc-list__link:focus {
   color: var(--accent-color);
 }
 
-.hero-pre-title {
-  color: rgba(157, 164, 189, 0.6);
+.hero-content__pre-title {
   margin-bottom: var(--typical-margin);
 }
 
-.hero-title {
+.hero-content__title {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -443,20 +450,20 @@ body {
   display: flex;
   align-items: baseline;
 }
-.hero-title::before {
+.hero-content__title::before {
   content: "";
   width: 40px;
   height: 40px;
   background-color: violet;
   margin-right: 10px;
 }
-.hero-title::after {
+.hero-content__title::after {
   content: "!";
   font-size: 90px;
   color: chocolate;
 }
 
-.hero-after-title {
+.hero-content__after-title {
   color: #9da4bd;
   max-width: 400px;
 }
@@ -469,31 +476,30 @@ body {
   display: flex;
 }
 
-.about-list {
+.pic-list {
   display: flex;
   margin-right: 64px;
 }
 
-.about-item + .about-item {
+.pic-list__item + .pic-list__item {
   margin-left: 30px;
 }
 
-.about-pre-title {
-  color: #303030;
+.about-content__pre-title {
   margin-bottom: var(--typical-margin);
 }
 
-.about-title {
+.about-content__title {
   color: var(--second-title-color);
   margin-bottom: var(--typical-margin);
 }
 
-.about-after-title {
+.about-content__after-title {
   color: #555555;
   margin-bottom: var(--typical-margin);
 }
 
-.about-text {
+.about-content__text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -501,7 +507,7 @@ body {
   margin-bottom: 39px;
 }
 
-.about-btn {
+.about-content__btn {
   color: #303030;
 }
 
@@ -655,17 +661,16 @@ body {
   padding-bottom: 130px;
 }
 
-.masters-pre-title {
-  color: #303030;
+.masters__pre-title {
   margin-bottom: var(--typical-margin);
 }
 
-.masters-title {
+.masters__title {
   color: var(--second-title-color);
   margin-bottom: 44px;
 }
 
-.masters-item-title {
+.card-list__item-title {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.38;
@@ -676,7 +681,7 @@ body {
   margin-top: 30px;
 }
 
-.masters-item-text {
+.card-list__item-text {
   font-size: 14px;
   line-height: 1.36;
   text-align: center;
@@ -685,23 +690,23 @@ body {
   margin-bottom: 30px;
 }
 
-.masters-list {
+.card-list {
   display: flex;
   margin: -15px;
 }
 
-.masters-item {
+.card-list__item {
   /* flex-basis: calc((100% - 90px) / 3); */
   flex-basis: calc(33.3333333333% - 30px);
   margin: 15px;
 }
 
-.masters-top-wrap {
+.card-list__top-wrap {
   position: relative;
   overflow: hidden;
 }
 
-.masters-top-text {
+.card-list__top-text {
   position: absolute;
   top: 0;
   font-size: 16px;
@@ -714,16 +719,16 @@ body {
   transform: translateY(100%);
   transition: transform 300ms linear;
 }
-.masters-item:hover .masters-top-text {
+.card-list__item:hover .card-list__top-text {
   transform: translateY(0);
 }
-.masters-top-text::-webkit-scrollbar {
+.card-list__top-text::-webkit-scrollbar {
   width: 6px;
 }
-.masters-top-text::-webkit-scrollbar-track {
+.card-list__top-text::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
-.masters-top-text::-webkit-scrollbar-thumb {
+.card-list__top-text::-webkit-scrollbar-thumb {
   background-color: rgb(117, 131, 212);
   outline: 1px solid slategrey;
 }
@@ -735,21 +740,21 @@ body {
 .masters-item:not(:last-child) {
   margin-right: 30px;
 } */
-.masters-soc-list {
+.socials {
   display: flex;
   justify-content: center;
 }
 
-.masters-soc-item {
+.socials__item {
   width: 44px;
   height: 44px;
   margin-left: 10px;
 }
-.masters-soc-item:first-child {
+.socials__item:first-child {
   margin-left: 0;
 }
 
-.masters-soc-link {
+.socials__link {
   justify-content: center;
   width: 100%;
   height: 100%;
@@ -757,12 +762,12 @@ body {
   background-color: tomato;
   color: #ffffff;
 }
-.masters-soc-link:hover, .masters-soc-link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: teal;
   color: var(--accent-color);
 }
 
-.masters-soc-icon {
+.socials__icon {
   fill: currentColor;
 }
 

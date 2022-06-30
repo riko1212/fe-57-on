@@ -8,28 +8,28 @@
   }
 }
 
-.header-nav {
+.nav {
   @extend %align-list;
 }
 
-.header-list {
+.menu {
   display: flex;
 }
 
-.header-logo {
+.nav__logo {
   margin-right: 70px;
 }
 
-.header-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.header-connect {
+.header__connect {
   margin-left: auto;
 }
 
-.header-link,
-.header-tel {
+.menu__link,
+.connect__tel {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -42,7 +42,7 @@
   }
 }
 
-.header-btn {
+.connect__btn {
   color: var(--main-btn-color);
   margin-left: 40px;
 }

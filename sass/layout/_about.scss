@@ -6,31 +6,30 @@
   }
 }
 
-.about-list {
+.pic-list {
   display: flex;
   margin-right: 64px;
 }
 
-.about-item + .about-item {
+.pic-list__item + .pic-list__item {
   margin-left: 30px;
 }
 
-.about-pre-title {
-  color: #303030;
+.about-content__pre-title {
   margin-bottom: var(--typical-margin);
 }
 
-.about-title {
+.about-content__title {
   color: var(--second-title-color);
   margin-bottom: var(--typical-margin);
 }
 
-.about-after-title {
+.about-content__after-title {
   color: #555555;
   margin-bottom: var(--typical-margin);
 }
 
-.about-text {
+.about-content__text {
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -38,6 +37,6 @@
   margin-bottom: 39px;
 }
 
-.about-btn {
+.about-content__btn {
   color: #303030;
 }
