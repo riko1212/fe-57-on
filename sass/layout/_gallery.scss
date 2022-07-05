@@ -1,6 +1,14 @@
 .gallery {
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
 }
 
 .gallery-pre-title {
@@ -15,7 +23,13 @@
 }
 
 .gallery-item {
-  width: calc((100% - 90px) / 4);
+  width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 /* .gallery-list {
